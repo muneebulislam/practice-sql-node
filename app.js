@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const mysql = require('mysql');
-const Joi = require('joi')
 
 const PORT = '3000';
 
@@ -92,13 +91,6 @@ app.get('/deletePost/:id', (req, res) => {
     });
 });
 
-function validatePost(post){
-    const schema = Joi.object().keys({
-    title: Joi.string().min(1).required(),
-    body: Joi.string().min(1).max(200).required()
-    });
-}
-
-app.listen(PORT, () => {
+app.listen(PORT, () =>{
     console.log(`listening on port:  ${PORT}`);
 });
