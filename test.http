@@ -1,0 +1,18 @@
+get http://localhost:3000/insertTableRow
+
+###
+
+get http://localhost:3000/getPosts
+
+###
+
+get http://localhost:3000/getAPost/2
+
+###
+
+get http://localhost:3000/updateTitle/2
+
+###
+
+get http://localhost:3000/deletePost/2
+
